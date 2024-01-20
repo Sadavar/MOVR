@@ -3,8 +3,8 @@ import { GoogleMap, InfoBox, InfoWindow, Marker, useJsApiLoader } from '@react-g
 
 const key = "AIzaSyBKoEACDcmaJYjODh0KpkisTk1MPva76s8";
 const containerStyle = {
-    width: '400px',
-    height: '400px'
+    width: '100vw',
+    height: '100vh'
 };
 
 const center = {
@@ -12,7 +12,7 @@ const center = {
     lng: -38.523
 };
 
-export default function Map() {
+function Map() {
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
         googleMapsApiKey: key
@@ -30,15 +30,17 @@ export default function Map() {
         setMap(null)
     }, [])
     return isLoaded ? (
-        <GoogleMap
-            mapContainerStyle={containerStyle}
-            center={center}
-            zoom={10}
-            onLoad={onLoad}
-            onUnmount={onUnmount}
-        >
-            { /* Child components, such as markers, info windows, etc. */}
-            <></>
-        </GoogleMap>
+        <div>
+            <GoogleMap
+                mapContainerStyle={containerStyle}
+                center={center}
+                zoom={10}
+                onLoad={onLoad}
+                onUnmount={onUnmount}
+            >
+            </ GoogleMap>
+        </div>
     ) : <></>
 }
+
+export default React.memo(Map)
