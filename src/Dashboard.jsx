@@ -2,6 +2,7 @@
 import Vitals from './Vitals'
 import Map from './Map';
 import Leaderboard from './Leaderboard';
+import {Distance} from './Distance';
 
 
 export default function Dashboard() {
@@ -14,6 +15,7 @@ export default function Dashboard() {
 
                 {/* <Map /> */}
                 <Leaderboard />
+                <Distance/>
             </div>
         </>
     )
