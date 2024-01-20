@@ -1,0 +1,57 @@
+.app {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+.card {
+    background-color: #2B2B2B;
+    width: 20vw;
+    height: 50vh;
+    margin: 0 2rem;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 8px 8px rgba(194, 255, 133, 0.5);
+  transition: 0.3s;
+}
+
+.title {
+  padding-top: 1rem;
+  padding-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+}
+
+.list-title {
+  font-weight: bold;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.stat {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

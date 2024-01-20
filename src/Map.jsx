@@ -5,7 +5,7 @@ import './index.css'
 const key = "AIzaSyBKoEACDcmaJYjODh0KpkisTk1MPva76s8";
 const containerStyle = {
     width: '700px',
-    height: '500px',
+    height: '450px',
     'border-radius': '15px',
 };
 

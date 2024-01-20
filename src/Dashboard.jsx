@@ -2,8 +2,9 @@
 import Vitals from './Vitals'
 import Map from './Map';
 import Leaderboard from './Leaderboard';
-import Stats from './Stats'
+import Profile from './Profile'
 import {Distance} from './Distance';
+import './index.css'
 
 
 export default function Dashboard() {
@@ -11,12 +12,13 @@ export default function Dashboard() {
     return (
         <>
             <div className="Dashboard">
+                <Profile />
                 <Vitals />
-                <Map />
-
-                {/* <Map /> */}
-                <Leaderboard />
-                <Distance/>
+                <div className='dash-bot'>
+                    <Map />
+                    <Leaderboard />
+                    <Distance/>
+                </div>
             </div>
         </>
     )

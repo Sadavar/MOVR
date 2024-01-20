@@ -1,6 +1,7 @@
 import React from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
 import { Line } from 'react-chartjs-2';
+import './index.css'
 
 ChartJS.register(
   CategoryScale,
@@ -14,6 +15,8 @@ ChartJS.register(
 
 const options = {
   responsive: true,
+  maintainAspectRatio: false,
+  color: "#FFFFFF",
   plugins: {
     legend: {
       position: 'top',
@@ -22,8 +25,34 @@ const options = {
       display: true,
       text: 'Distance (km)',
       position: 'bottom',
+      color: 'white',
     },
   },
+  scales: {
+    y:{
+      border: {
+        color: '#FFFFFF'
+      },
+      ticks: {
+        color: '#FFFFFF'
+      },
+      grid: {
+        drawTicks: false,
+      }
+    },
+    x:{
+      border: {
+        color: '#FFFFFF'
+      },
+      ticks: {
+        color: '#FFFFFF'
+      },
+      grid: {
+        drawTicks: false,
+      }
+    }
+  },
+  borderColor: "#FFFFFF"
 };
 
 const labels = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
@@ -47,5 +76,10 @@ const data = {
 };
 
 export function Distance() {
-  return <Line options={options} data={data} />;
+
+  return (
+    <div className="stat-graph">
+      <Line options={options} data={data}/>;
+    </div>
+  )
 }

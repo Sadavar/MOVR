@@ -16,10 +16,9 @@ html {
     background-color: #3F3F3F;
 }
 
-.dashboard {
-    display: grid;
-    grid-template-columns: repeat(5, 2fr);
-    grid-template-rows: repeat(5, 1fr);
+.Dashboard {
+    height: 100vh;
+    overflow: hidden;
 }
 
 .vital-list {
@@ -41,6 +40,13 @@ html {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: var(--box-shadow);
+    transition: 0.3s;
+}
+
+.vital-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px 8px rgba(194, 255, 133, 0.5);
+    transition: 0.3s;
 }
 
 .vital-img {
@@ -48,5 +54,23 @@ html {
 }
 
 .map {
-    padding: 2rem;
+    padding: 0.5rem 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.dash-bot {
+    display: flex;
+}
+
+.stat-graph {
+    width: 700px;
+    height: 500px;
+}
+
+.profile {
+    background-color: #2B2B2B;
+    height: 100%;
+    width: 15%;
+    position: sticky;
+    z-index: 3;
 }

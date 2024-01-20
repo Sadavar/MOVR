@@ -1,42 +1,63 @@
 import React from 'react'
+import './Leaderboard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock } from '@fortawesome/free-regular-svg-icons'
+import { faRoad } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 function Leaderboard() {
-    return (
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <div style={{
-                width: '20vw',
-                height: '50vh',
-                borderRadius: '20px',
-                background: '#2B2B2B',
-                marginTop: '5vh',
-            }}>
-                <h1 style={{
-                    color: 'white',
-                    textAlign: 'center'
 
-                }}>LEADERBOARD</h1>
-                <div style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                }}>
-                    <div style={{
-                        paddingRight: '10px',
-                    }}>icon</div>
-                    <div>
-                        <div>
-                            <h1 style={{
-                                color: 'white',
-                                textAlign: 'center',
-                                fontSize: '20px'
-                            }}>John Doe</h1>
+    return (
+        <div className="app">
+            <div className="card">
+                <h2 className="title">LEADERBOARD</h2>
+                <div className="container">
+                    <div className="list-container">
+                        <FontAwesomeIcon icon={faUser} size='2xl' />
+                        <div className="stats-container">
+                            <div className="">
+                                <div className="list-title">Emma Cherrin</div>
+                            </div>
+                            <div className="stat">
+                                <FontAwesomeIcon icon={faRoad} />
+                                <div>10.2km</div>
+                            </div>
+                            <div className="stat">
+                                <FontAwesomeIcon icon={faClock} />
+                                <div>41:05</div>
+                            </div>
                         </div>
-                        <div>
-                            temp
+                    </div>
+                    <div className="list-container">
+                        <FontAwesomeIcon icon={faUser} size='2xl' />
+                        <div className="stats-container">
+                            <div className="">
+                                <div className="list-title">Varun Sadasivam</div>
+                            </div>
+                            <div className="stat">
+                                <FontAwesomeIcon icon={faRoad} />
+                                <div>10.1km</div>
+                            </div>
+                            <div className="stat">
+                                <FontAwesomeIcon icon={faClock} />
+                                <div>41:05</div>
+                            </div>
                         </div>
-                        <div>
-                            temp
+                    </div>
+                    <div className="list-container">
+                        <FontAwesomeIcon icon={faUser} size='2xl' />
+                        <div className="stats-container">
+                            <div className="">
+                                <div className="list-title">Selina Liu (Me)</div>
+                            </div>
+                            <div className="stat">
+                                <FontAwesomeIcon icon={faRoad} />
+                                <div>10.2km</div>
+                            </div>
+                            <div className="stat">
+                                <FontAwesomeIcon icon={faClock} />
+                                <div>41:05</div>
+                            </div>
                         </div>
                     </div>
                 </div>
