@@ -25,7 +25,7 @@ html {
 .vital-list {
     display: flex;
     justify-content: space-evenly;
-    height: 400px;
+    height: 25rem;
     margin: 2rem 0;
 }
 
