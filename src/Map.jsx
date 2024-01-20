@@ -1,10 +1,12 @@
 import React from 'react';
 import { GoogleMap, InfoBox, InfoWindow, Marker, useJsApiLoader } from '@react-google-maps/api';
+import './index.css'
 
 const key = "AIzaSyBKoEACDcmaJYjODh0KpkisTk1MPva76s8";
 const containerStyle = {
-    width: '100vw',
-    height: '100vh'
+    width: '700px',
+    height: '500px',
+    'border-radius': '15px',
 };
 
 const center = {
@@ -30,7 +32,7 @@ function Map() {
         setMap(null)
     }, [])
     return isLoaded ? (
-        <div>
+        <div className='map'>
             <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}
