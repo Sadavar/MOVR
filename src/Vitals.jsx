@@ -1,6 +1,7 @@
 import React from 'react'
 import Heart from './assets/pngimg.com - heart_PNG51335.png'
 import Calories from './assets/cal_graph.png'
+import Clock from './assets/clock-png-25789.png'
 import Incline from './assets/incline_graph.png'
 import Speed from './assets/speed_graph.png'
 import './index.css'
@@ -20,6 +21,7 @@ const Vitals = () => {
         </div>
         <div className='vital-item'>
             <h2>TIME LAPSED</h2>
+            <img src={Clock} alt="calories-img" className='vital-img'/>
             <p>50:20</p>
         </div>
         <div className='vital-item'>

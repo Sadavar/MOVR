@@ -49,4 +49,23 @@
   .nav-bar.active {
     width: 250px;
   }
-  
+
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    padding-bottom: 10rem;
+  }
+
+  .nav-list {
+    margin-top: 200px;
+  }
+
+  .selina-circle {
+    margin-bottom: 60px;
+  }
+
+  .profile-me {
+    color: white;
+    text-align: center;
+  }
