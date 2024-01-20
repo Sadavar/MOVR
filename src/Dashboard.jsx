@@ -2,6 +2,7 @@
 import Vitals from './Vitals'
 import Map from './Map';
 import Leaderboard from './Leaderboard';
+import Stats from './Stats'
 
 
 export default function Dashboard() {
